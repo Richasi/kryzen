@@ -1,0 +1,33 @@
+
+.navbar-container {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Making the background semi-transparent */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  /* Adding a subtle shadow */
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;  /* Smooth transition */
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.nav-link {
+    color: solid black; 
+     /* Default color for links */
+     font-size: 20px;
+     font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: red;  /* Green underline */
+}
+.button-logout {
+    color: red;
+    border-color: teal;
+    border-width: 1px;
+}
