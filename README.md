@@ -42,5 +42,5 @@ which a new product should be added to the list automatically.
  Form Handling: Formik & Yup
  Backend: Node.js & Express.js
  Database: MySQL
- Authentication: Your choice
- Deployment: Your choice
+ Authentication: json web token
+ Deployment: render for backend & vercel hor Frontend
