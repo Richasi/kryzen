@@ -8,7 +8,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  /* Adding a subtle shadow */
     margin-bottom: 20px;
     transition: rgb(97, 236, 97);
-    background-color: rgb(158, 125, 247);  /* Smooth transition */
+    background-color:rgba(12, 5, 5, 0.74);  /* Smooth transition */
 }
 
 .logo {
@@ -24,7 +24,7 @@
 }
 
 .nav-link:hover {
-    color :blue;
+    color :yellow;
     text-decoration: underline;
     text-decoration-color: red;  /* Green underline */
 }

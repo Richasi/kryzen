@@ -51,7 +51,7 @@ const Login = () => {
         <div >
             <Navbar />
 
-            <Heading marginBottom="20px">Login Page</Heading>
+            <Heading marginBottom="20px">Login</Heading>
 
             <form onSubmit={handleForm} style={{ width: "100%" }}>
                 <Container

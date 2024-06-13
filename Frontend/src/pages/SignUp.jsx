@@ -56,7 +56,7 @@ const SignUp = () => {
   return (
     <div>
       <Navbar />
-      <Heading mb="5">Sign Up Page</Heading>
+      <Heading mb="5">Sign Up </Heading>
 
 
       <Box margin="auto" w="40%"
