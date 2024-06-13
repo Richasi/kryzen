@@ -79,7 +79,7 @@ const ProductPage = () => {
                 name: 'Scheduled Product',
                 description: 'This product was added automatically',
                 price: 0,
-                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUls49w0kK_YppGMuppVYlBNenKcJiY1aUmA&s",
+                image: "https://5.imimg.com/data5/VL/QY/KY/SELLER-4220950/hp-8470-rental-laptop.jpg",
                 product_type: "Electronic"
             });
         }, delay);

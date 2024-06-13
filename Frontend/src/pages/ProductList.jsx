@@ -40,7 +40,7 @@ const ProductList = ({ products, onEdit, onDelete, onFilter, onSortByTime }) => 
                         <th>Description</th>
                         <th>Price</th>
                         <th>Product Type</th>
-                        <th>Edit</th>
+                        <th >Edit</th>
                         <th>Delete</th>
                     </tr>
                 </thead>
