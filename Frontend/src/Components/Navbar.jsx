@@ -26,8 +26,8 @@ const Navbar = () => {
       <Text color={"black"} fontSize="20px "  className="nav-link">
         {isAuth ? "" : <NavLink to="/">Sign Up</NavLink>}
       </Text>
-      <Text color={"black"} fontSize="20px" className="nav-link">
-        {isAuth ? <Button onClick={handleLogOut}>Log Out</Button> : <NavLink to="/login">Log In</NavLink>}
+      <Text color={"black"} fontSize="20px" className="nav-link ">
+        {isAuth ? <Button className='button-logout' onClick={handleLogOut}>Log Out</Button> : <NavLink to="/login">Log In</NavLink>}
       </Text>
      
     </HStack>

@@ -28,7 +28,11 @@
     text-decoration-color: red;  /* Green underline */
 }
 .button-logout {
-    color: red;
-    border-color: teal;
+    
+    border-color: red;
     border-width: 1px;
+    color: red;
+    font-weight: bold;
+
+
 }
