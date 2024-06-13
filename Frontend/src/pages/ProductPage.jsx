@@ -16,8 +16,6 @@ const ProductPage = () => {
     const [scheduleTime, setScheduleTime] = useState('');
     const [isSortedByTime, setIsSortedByTime] = useState(false);
     const toast = useToast();
-//https://kryzenbiotec-1-0sgh.onrender.com/
-
 
     useEffect(() => {
         fetchProducts();
@@ -81,7 +79,7 @@ const ProductPage = () => {
                 name: 'Scheduled Product',
                 description: 'This product was added automatically',
                 price: 0,
-                image: "Frontend\public\h.png",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUls49w0kK_YppGMuppVYlBNenKcJiY1aUmA&s",
                 product_type: "Electronic"
             });
         }, delay);

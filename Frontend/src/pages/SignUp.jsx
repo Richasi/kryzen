@@ -11,13 +11,14 @@ const SignUp = () => {
   const handleClick = () => setShow(!show);
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [isLoading, setIsLoading] = useState(false);
   const toast = useToast()
   const handleSubmit = async () => {
     const payload = {
       email,
       password,
     }
-
+    setIsLoading(true);
     try {
       let res = await axios.post("https://kryzenbiotec-1-0sgh.onrender.com/user/signup", payload)
       // console.log("Hello",res.data)
@@ -47,6 +48,7 @@ const SignUp = () => {
     })
       console.log(err);
     }
+    setIsLoading(false); //loading
 
   }
 
@@ -92,6 +94,7 @@ const SignUp = () => {
 
 
         <Button size='md' px={8} colorScheme="red" variant={'solid'} marginTop="10" mb="10"
+            isLoading={isLoading} 
           
           onClick={handleSubmit}
         >

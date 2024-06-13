@@ -15,6 +15,7 @@ const init = {
 const Login = () => {
     const [formData, setFormData] = useState(init)
     const [show, setShow] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const handleClick = () => setShow(!show);
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -24,8 +25,10 @@ const Login = () => {
 
     const handleForm = async (e) => {
         e.preventDefault()
+        setIsLoading(true); 
         console.log(formData)
         dispatch(LogIn(formData))
+        setIsLoading(false);
     }
 
 
@@ -38,7 +41,7 @@ const Login = () => {
 
     let userUID = localStorage.getItem('userUID');
 
-    // console.log("log", userUID)
+
 
     if (auth.isAuth) {
         navigate(`/${userUID}/product-page`)
@@ -87,12 +90,16 @@ const Login = () => {
                                 pl="3"
                             />
                             <InputRightElement width="4.5rem">
-                                <Button h="1.75rem" size="sm" onClick={handleClick}>
+                                <Button h="1.75rem"
+                                 size="sm" onClick={handleClick}>
                                     {show ? "Hide" : "Show"}
                                 </Button>
                             </InputRightElement>
                         </InputGroup>
-                        <Button colorScheme="red" py="5" mt="10" type="submit" loadingText='Logging in'>
+                        <Button colorScheme="red" 
+                        py="5" mt="10" 
+                        type="submit"
+                        isLoading={isLoading}  loadingText='Logging in'>
                             Log in
                         </Button>
                     </FormControl>
