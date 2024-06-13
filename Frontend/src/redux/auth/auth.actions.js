@@ -1,11 +1,10 @@
 
-// Dispatcher
 import Swal from "sweetalert2"
 import axios from "axios";
 import { LOGIN, LOGIN_ERROR, LOGIN_REQUEST, LOGOUT } from "./auth.types";
 
 export const LogIn = (creds) => async (dispatch) => {
-
+ 
 
   dispatch({
     type: LOGIN_REQUEST
@@ -17,12 +16,13 @@ try {
    
     Swal.fire({
         icon: 'success',
-        title:data.message
+        title:data.msg
       })
       return dispatch({
         type: LOGIN,
         payload: data.token,
-        token: localStorage.setItem("userToken",data.token)
+        token: localStorage.setItem("userToken",data.token),
+        userUID: localStorage.setItem("userUID", data.userUID)
     });
 }
 catch ({ response: { data: { message } } }) {
