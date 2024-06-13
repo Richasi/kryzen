@@ -14,28 +14,23 @@ const Navbar = () => {
   };
 
   return (
-    <Flex className="navbar-container">
+    <Flex className="navbar-container"
+    >
       <Box>
-        <Image src="https://kryzen.com/wp-content/uploads/2022/02/kryzen-logo-1.png" alt="Kryzen Logo" className="logo" />
+      <NavLink  > <Image src="https://kryzen.com/wp-content/uploads/2022/02/kryzen-logo-1.png" alt="Kryzen Logo" className="logo" /></NavLink>
       </Box>
-      <HStack spacing="30px">
-      <Text className="nav-link">
-          <NavLink to="/product-page">Product Page</NavLink>
-        </Text>
-        {!isAuth && (
-          <Text className="nav-link">
-            <NavLink to="/">Sign Up</NavLink>
-          </Text>
-        )}
-        <Text className="nav-link">
-          {isAuth ? (
-            <Button onClick={handleLogOut} className="button-logout">Log Out</Button>
-          ) : (
-            <NavLink to="/login">Log In</NavLink>
-          )}
-        </Text>
-        
-      </HStack>
+      <HStack  spacing='70px' transition= "background-color 0.3s ease" justifyContent="center" py="5">
+      <Text color={"black"} fontSize="20px"  className="nav-link">
+        <NavLink>Product Page</NavLink>
+      </Text>
+      <Text color={"black"} fontSize="20px "  className="nav-link">
+        {isAuth ? "" : <NavLink to="/">Sign Up</NavLink>}
+      </Text>
+      <Text color={"black"} fontSize="20px" className="nav-link">
+        {isAuth ? <Button onClick={handleLogOut}>Log Out</Button> : <NavLink to="/login">Log In</NavLink>}
+      </Text>
+     
+    </HStack>
     </Flex>
   );
 };

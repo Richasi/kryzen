@@ -23,6 +23,7 @@
 }
 
 .nav-link:hover {
+    color :blue;
     text-decoration: underline;
     text-decoration-color: red;  /* Green underline */
 }
