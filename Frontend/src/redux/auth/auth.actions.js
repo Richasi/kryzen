@@ -1,4 +1,5 @@
 
+// Dispatcher
 import Swal from "sweetalert2"
 import axios from "axios";
 import { LOGIN, LOGIN_ERROR, LOGIN_REQUEST, LOGOUT } from "./auth.types";
