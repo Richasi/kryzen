@@ -1,4 +1,4 @@
-Frontend Deploy- https://kryzen-c1i1rv5um-richasis-projects.vercel.app/
+Frontend Deploy-[Live DEMO] https://kryzen-c1i1rv5um-richasis-projects.vercel.app/
  Backend Deploy -https://kryzenbiotec-1-0sgh.onrender.com/
  
  # Kryzen Application Development Assignment
