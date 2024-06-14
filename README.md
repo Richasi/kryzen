@@ -1,4 +1,4 @@
-[Live DEMO](https://kryzen-c1i1rv5um-richasis-projects.vercel.app/)
+[Live DEMO](https://kryzen-pied.vercel.app/)
  Backend Deploy -https://kryzenbiotec-1-0sgh.onrender.com/
  
  # Kryzen Application Development Assignment
